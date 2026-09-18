@@ -33,10 +33,10 @@ A simple and elegant web application that displays prayer times for any city in 
 ## 📸 Screenshots
 
 ### Before Search
-![Before Search](screenshot-before.png)
+![Before Search](screenshot-after.png)
 
 ### After Search
-![After Search](screenshot-after.png)
+![After Search](screenshot-before.png)
 
 ## 👨‍💻 Author
 **Ali Alfozo**
