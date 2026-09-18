@@ -27,7 +27,17 @@ A simple and elegant web application that displays prayer times for any city in 
 1. Clone the repository:
    ```bash
    git clone https://github.com/ali-alfozo/prayer-times.git
-  
- ## 👨‍💻 Author
+   ```
+2. Open `index.html` in your browser.
+
+## 📸 Screenshots
+
+### Before Search
+![Before Search](screenshot-before.png)
+
+### After Search
+![After Search](screenshot-after.png)
+
+## 👨‍💻 Author
 **Ali Alfozo**
  - GitHub: [@ali-alfozo](https://github.com/ali-alfozo)
