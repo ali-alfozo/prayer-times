@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prayer Times</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+ 
+        <div class="container">
+            <h2>🕌 Prayer Times</h2>
+            
+            <!-- هاي اللي هون عبارة عن حقول الإدخال -->    
+                <input type="text" id="dateInput" placeholder="DD-MM-YYYY">
+            <input type="text" id="cityInput" placeholder="Enter your City (e.g. Homs)">
+            <input type="text" id="countryInput" placeholder="Enter Your Country Code (e.g. SY)">
+            
+            <button onclick="getPrayerTimes()">Show Prayer Times</button>
+
+            <!-- قسم النتائج -->
+            <div id="results">
+                <div class="result-title" id="locationTitle"></div>
+                
+                <div class="prayer-grid">
+                    <div class="prayer-card" id="card-Fajr">
+                        <div class="prayer-name">Fajr</div>
+                        <div class="prayer-time" id="fajr">--:--</div>
+                    </div>
+                    
+                    <div class="prayer-card" id="card-Sunrise">
+                        <div class="prayer-name">Sunrise</div>
+                        <div class="prayer-time" id="sunrise">--:--</div>
+                    </div>
+                    
+                    <div class="prayer-card" id="card-Dhuhr">
+                        <div class="prayer-name">Dhuhr</div>
+                        <div class="prayer-time" id="dhuhr">--:--</div>
+                    </div>
+                    
+                    <div class="prayer-card" id="card-Asr">
+                        <div class="prayer-name">Asr</div>
+                        <div class="prayer-time" id="asr">--:--</div>
+                    </div>
+                    
+                    <div class="prayer-card" id="card-Maghrib">
+                        <div class="prayer-name">Mughrib</div>
+                        <div class="prayer-time" id="maghrib">--:--</div>
+                    </div>
+                    
+                    <div class="prayer-card" id="card-Isha">
+                        <div class="prayer-name">Isha</div>
+                        <div class="prayer-time" id="isha">--:--</div>
+                    </div>
+                </div>
+
+                <div class="next-prayer">
+                    <div class="prayer-name">Next Prayer</div>
+                    <div class="prayer-time" id="nextPrayer">--:--</div>
+                </div>
+            </div>
+        </div>
+<div id="toastMessage" class="toast hidden">
+    <span id="toastText"></span>
+</div>
+        <script src="script.js"></script>
+ 
+    </body>
+    </html>

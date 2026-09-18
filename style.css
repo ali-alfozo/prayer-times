@@ -1,0 +1,218 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content:  flex-end  ;
+            align-items: center;
+            padding: 10%;
+              background-image: url("background.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #0a0f28;
+        }
+
+       
+.result-title strong {
+    color:white;      /* لون اسم المدينة */
+    font-size: 22px;     /* حجم اسم المدينة */
+}
+
+.result-title small {
+    color: rgba(255, 255, 255, 0.7);  /* لون التاريخ */
+}
+         .container {
+            position: relative;
+            z-index: 1; /*   للتأكد من أن المحتوى فوق الطبقة الداكنة */
+            
+            /*   تأثير الزجاج - جميع الخصائص المهمة */
+            background: rgba(255, 255, 255, 0.1);   
+     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /*   إطار خفيف */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /*   باقي الخصائص */
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    
+    /*   لون النص أبيض ليظهر على الخلفية الداكنة */
+    color: white;
+}
+
+        h2 {
+            color:  white;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #59539d;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #59539d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #59539d;
+            transform: scale(1.02);
+        }
+         #results {
+            display: none;
+        }
+         .result-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #1a2b4c;
+            line-height: 1.6;
+        }
+
+        /*   3 أعمدة لعرض 6 بطاقات بشكل أنيق */
+        .prayer-grid {
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .prayer-card {
+            background-color: #59539d;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 12px 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .prayer-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(74, 58, 255, 0.2);
+        }
+
+        .prayer-name {
+            color: white  ;
+            font-size: 13px;
+            margin-bottom: 5px;
+            font-weight: 600;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .prayer-time {
+                color: white  ;
+                font-size: 18px;
+                font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  
+        }
+
+        /* ✅ بطاقة الصلاة القادمة - مميزة */
+        .prayer-card.active {
+             background: linear-gradient(135deg, #59539d,  );
+            border: 2px solid #f0c040;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(74, 58, 255, 0.4);
+        }
+
+        .prayer-card.active .prayer-name,
+        .prayer-card.active .prayer-time {
+            color: white;
+        }
+
+         
+         /*   Next Prayer Box */
+         /* صندوق البطاقة القادمة */
+         
+        .next-prayer {
+            background: linear-gradient(135deg, #59539d, #7a37bf);
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            margin-top: 15px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(74, 58, 255, 0.3);
+        }
+
+        .next-prayer .prayer-name {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .next-prayer .prayer-time {
+            color: white;
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+        .next-prayer .countdown {
+            color: #f0c040;
+            font-size: 15px;
+            margin-top: 8px;
+            font-weight: normal;
+        }
+        /* ============================================
+   Toast Notification (للأخطاء فقط)
+============================================ */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #c62828; /* أحمر افتراضي (للأخطاء) */
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(198, 40, 40, 0.4);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    max-width: 90%;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
