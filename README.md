@@ -7,7 +7,7 @@ A simple and elegant web application that displays prayer times for any city in 
 - 🔍 Search prayer times by city and country
 - 🕌 Displays 6 prayer times: Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha
 - ⏳ Live countdown to the next prayer (updates every second)
-- 🌙 Displays both Gregorian and Hijri datesٍ
+- 🌙 Displays both Gregorian and Hijri dates
 - ⭐ Highlights the next prayer with a unique design
 - 🎨 Beautiful glassmorphism UI with a mosque background
 - 🌍 Works for any city worldwide
