@@ -53,10 +53,10 @@ Through building this project, I strengthened my understanding of:
 ## 📸 Screenshots
 
 ### Before Search
-![Before Search](screenshot-before.png)
+![Before Search](screenshot-after.png)
 
 ### After Search
-![After Search](screenshot-after.png)
+![After Search](screenshot-before.png)
 
 ## 👨‍💻 Author
 
