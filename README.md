@@ -1,4 +1,10 @@
+ 
 # 🕌 Prayer Times App
+
+![Vanilla JS](https://img.shields.io/badge/Vanilla%20JS-No%20Frameworks-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Aladhan API](https://img.shields.io/badge/Aladhan-API-blue?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
+![No Dependencies](https://img.shields.io/badge/Dependencies-0-success?style=for-the-badge)
 
 A simple and elegant web application that displays prayer times for any city in the world, built with **Vanilla JavaScript** and **Aladhan API**.
 
