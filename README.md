@@ -12,6 +12,7 @@ A simple and elegant web application that displays prayer times for any city in 
 - 🎨 Beautiful glassmorphism UI with a mosque background
 - 🌍 Works for any city worldwide
 - 📱 Fully responsive design
+- ⏱️ Automatically calculates and highlights the upcoming prayer
 
 ## 🛠️ Tech Stack
 
@@ -30,14 +31,34 @@ A simple and elegant web application that displays prayer times for any city in 
    ```
 2. Open `index.html` in your browser.
 
+## 🌐 Live Demo
+
+Experience the application directly in your browser:
+
+🔗 **[https://ali-alfozo.github.io/prayer-times/](https://ali-alfozo.github.io/prayer-times/)**
+
+## 📚 What I Learned
+
+Through building this project, I strengthened my understanding of:
+
+- 🌐 **API Integration** — Fetching real-time data from the Aladhan API
+- ⏳ **Async/Await** — Handling asynchronous operations cleanly
+- 🔄 **JSON Parsing** — Extracting nested data from API responses
+- 🕐 **Date & Time Logic** — Calculating the next prayer and countdown
+- 🎨 **Glassmorphism UI** — Building modern, frosted-glass interfaces
+- 🌍 **Timezone Handling** — Displaying times for any city worldwide
+- 📱 **Responsive Design** — Adapting the layout to all screen sizes
+- 🌙 **Hijri Calendar** — Displaying both Gregorian and Hijri dates
+
 ## 📸 Screenshots
 
 ### Before Search
-![Before Search](screenshot-after.png)
+![Before Search](screenshot-before.png)
 
 ### After Search
-![After Search](screenshot-before.png)
+![After Search](screenshot-after.png)
 
 ## 👨‍💻 Author
+
 **Ali Alfozo**
- - GitHub: [@ali-alfozo](https://github.com/ali-alfozo)
+- GitHub: [@ali-alfozo](https://github.com/ali-alfozo)
